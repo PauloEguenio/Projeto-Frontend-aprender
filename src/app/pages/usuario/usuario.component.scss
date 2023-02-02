@@ -1,0 +1,42 @@
+.title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-bottom: 2rem;
+    transition: width .2s ease-out;
+}
+  
+.form-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+  
+.form-group {
+    display: flex;
+    gap: 1rem;
+
+    &.spaced {
+        justify-content: flex-start;
+
+        & mat-form-field {
+            width: auto;
+        }
+
+        & mat-form-field {
+            width: auto;
+        }
+    }
+}
+
+.actions-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

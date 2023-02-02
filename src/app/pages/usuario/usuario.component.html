@@ -1,0 +1,24 @@
+<form>
+    <div class="title">
+      <a mat-icon-button matTooltip="Retornar a Lista de Usuários" aria-label="Retornar a Lista de Usuários" [routerLink]="['/']">
+        <mat-icon>chevron_left</mat-icon>
+      </a>
+      <h2>Usuário</h2>
+    </div>    
+    <div class="form-group">
+        <mat-form-field>
+          <mat-label>Nome</mat-label>
+          <input matInput type="text" formControlName="nome">          
+        </mat-form-field>   
+
+        <mat-form-field>
+        <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email">          
+        </mat-form-field>  
+    </div>
+    
+    <div class="actions-group">
+      <button mat-flat-button type="submit" color="accent">Salvar Usuário</button>
+    </div>  
+</form>
+  
